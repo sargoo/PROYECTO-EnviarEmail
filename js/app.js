@@ -28,7 +28,7 @@ function validadFormulario(e){
 
 
     if(e.target.value.length > 0){
-        console.log('hay taxto');
+        
     }else{
         e.target.classList.add('border','border-red-500');
         mostrarError('Todos los campos son obligatorios');
@@ -36,7 +36,6 @@ function validadFormulario(e){
     }
     if(e.target.type === 'email'){
         const resultado = e.target.value.indexOf('@');
-        console.log(resultado);
         if(resultado < 0 ){    
             mostrarError('El mail no es válido');
         }
