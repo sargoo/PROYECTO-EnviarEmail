@@ -5,6 +5,7 @@ const email = document.querySelector('#email');
 const asunto = document.querySelector('#asunto');
 const mensaje = document.querySelector('#mensaje');
 const formulario = document.querySelector('#enviar-mail');
+//expresion regular = er
 const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 eventListeners();
@@ -57,7 +58,6 @@ function validarFormulario(e){
             e.target.classList.remove('border','border-green-500');
             e.target.classList.add('border','border-red-500');
             mostrarError('Email no válido');
-
         }
     }
     
@@ -112,3 +112,4 @@ function resetearFormulario(){
     asunto.classList.remove('border','border-green-500');
     mensaje.classList.remove('border','border-green-500');
 };
+
