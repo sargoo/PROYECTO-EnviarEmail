@@ -82,7 +82,7 @@ function mostrarError(mensaje){
     }
 }
 
-enviarEmail
+enviarEmail();
 
 function enviarEmail(e){
     e.preventDefault();
